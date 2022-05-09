@@ -1,0 +1,109 @@
+:root{
+    --Color1: #F0DD92;
+    --Color2: #FFFFC5;
+    --Color3: #D6E4AA;
+    --Color4: #83B582;
+    --Color5: #3C4245;
+    --fuente: Montserrat;
+    --fuenteLogo: Market_Deco;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("font/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Market_Deco;
+    src: url("font/Market_Deco.ttf");
+}
+.navbg{
+    background-color: var(--Color4);
+    font-family: var(--fuente);
+    color: var(--Color5);
+    font-weight: bold;
+}
+
+.navbg a:hover{
+    background-color: var(--Color3);
+    color: var(--Color2);
+    border-radius: 15px;
+}
+
+.footerbg{
+    background-color: var(--Color4);
+    font-family: var(--fuente);
+    color: var(--Color5);
+}
+.logo{
+    margin-right: 10px;
+}
+
+.container{
+    width: 500px;
+}
+
+
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+
+.mensaje{
+    height: 70px;
+}
+
+.head{
+    background-color: var(--Color4);
+    border-radius: 8px;
+    margin-top: -40px;
+    -webkit-box-shadow: 47px 50px 46px -41px rgba(131,181,130,1);
+    -moz-box-shadow: 47px 50px 46px -41px rgba(131,181,130,1);
+    box-shadow: 47px 50px 46px -41px rgba(131,181,130,1);
+}
+
+.form-row{
+    display: flex;
+}
+
+.effect-1{
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.effect-1 ~ .Focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--Color4);
+    transition: 0.4s;
+}
+
+.effect-1:focus ~ .Focus-border{
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.btn1{
+    background-color: var(--Color4);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 145px;
+}.btn1:hover{
+    -webkit-box-shadow: 47px 50px 46px -41px rgba(131,181,130,1);
+    -moz-box-shadow: 47px 50px 46px -41px rgba(131,181,130,1);
+    box-shadow: 47px 50px 46px -41px rgba(131,181,130,1);
+}
